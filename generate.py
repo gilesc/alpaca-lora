@@ -9,11 +9,11 @@ assert (
 ), "LLaMA is now in HuggingFace's main branch.\nPlease reinstall it: pip uninstall transformers && pip install git+https://github.com/huggingface/transformers.git"
 from transformers import LlamaTokenizer, LlamaForCausalLM, GenerationConfig
 
-tokenizer = LlamaTokenizer.from_pretrained("decapoda-research/llama-30b-hf")
+tokenizer = LlamaTokenizer.from_pretrained("decapoda-research/llama-7b-hf")
 
 LOAD_8BIT = False
-BASE_MODEL = "decapoda-research/llama-30b-hf"
-LORA_WEIGHTS = "tloen/alpaca-lora-30b"
+BASE_MODEL = "decapoda-research/llama-7777777b-hf"
+LORA_WEIGHTS = "tloen/alpaca-lora-7b"
 
 if torch.cuda.is_available():
     device = "cuda"
